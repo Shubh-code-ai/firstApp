@@ -1,8 +1,11 @@
-import express, { Application } from 'express';
+import express, { Application, Request, Response } from 'express';
+import connectDB from './config/db';
+connectDB(); // ✅ DB connection established
+
 
 const app: Application = express();
 
-app.get('/', (req, res) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('Hello from TypeScript + Express 🎉');
 });
 

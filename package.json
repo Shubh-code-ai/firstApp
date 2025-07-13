@@ -3,32 +3,38 @@
   "version": "1.0.0",
   "description": "Node.js + TypeScript + Express backend setup",
   "main": "dist/index.js",
-  "type": "module",
-
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only src/index.ts", 
-    "lint": "eslint . --ext .ts", 
-    "lint:fix": "eslint . --ext .ts --fix" 
+    "start": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.3"
   },
-
   "devDependencies": {
-    "@eslint/js": "^9.31.0", 
-    "@types/express": "^4.17.21", 
-    "@types/node": "^20.12.12", 
-    "@typescript-eslint/eslint-plugin": "^7.8.0", 
-    "@typescript-eslint/parser": "^7.8.0", 
+    "@eslint/js": "^9.31.0",
+    "@types/express": "^4.17.21",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.12.12",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
     "eslint": "^9.31.0",
     "globals": "^16.3.0",
-    "ts-node-dev": "^2.0.0", 
-    "typescript": "^5.4.5" 
-  }
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shubh-code-ai/firstApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shubh-code-ai/firstApp/issues"
+  },
+  "homepage": "https://github.com/Shubh-code-ai/firstApp#readme"
 }
-
